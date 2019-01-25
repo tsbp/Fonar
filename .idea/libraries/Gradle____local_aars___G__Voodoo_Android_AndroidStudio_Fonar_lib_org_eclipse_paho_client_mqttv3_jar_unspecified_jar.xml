@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_aars__:G.\Voodoo\Android\AndroidStudio\Fonar\lib\org.eclipse.paho.client.mqttv3.jar:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/org.eclipse.paho.client.mqttv3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

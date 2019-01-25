@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Fonar"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bglayout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bglayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
+                <TextView
+                    android:id="@+id/tvValue"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:layout_gravity="center"
+                    android:background="@drawable/cell"
+                    android:gravity="center"
+                    android:text="23%"
+                    android:textSize="67dp"
+                    android:layout_margin="5dp"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:id="@+id/btnMode"
+                        android:onClick="onClickEvent"
+                        android:src="@drawable/auto"
+                        android:layout_marginBottom="5dp"
+                        android:tint="#ffffff"
+                        android:background="@drawable/bglayout"/>
+                    <ImageView
+                        android:id="@+id/btnCfg"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:src="@drawable/luminaire"
+                        android:onClick="onClickEvent"
+                        android:background="@drawable/bglayout"
+                        android:layout_marginTop="5dp"
+                        android:tint="#ffffff"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvState"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cell"
+                    android:gravity="center"
+                    android:textSize="23dp"
+                    android:layout_margin="5dp"/>
+                <SeekBar
+                    android:id="@+id/sbValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="WarmFloor"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bglayout"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bglayout">
+        <TextView
+            android:id="@+id/tvWFTemp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="@drawable/cell"
+            android:gravity="center"
+            android:textSize="67dp"
+            android:text="23"
+            android:layout_margin="10dp"/>
+        <SeekBar
+            android:id="@+id/sbWFTemp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>
